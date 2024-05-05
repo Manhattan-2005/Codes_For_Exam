@@ -36,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ((Button) findViewById(R.id.customToast)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenActivity(Custom_Toast.class);
+            }
+        });
+
     }
 
     public void OpenActivity(Class activity) {

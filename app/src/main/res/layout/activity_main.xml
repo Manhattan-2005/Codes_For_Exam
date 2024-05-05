@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="230dp"
         android:padding="20dp"
         android:text="Show Current Location" />
 
@@ -34,6 +34,14 @@
         android:padding="20dp"
         android:layout_below="@id/geocoding"
         android:text="Show Route from Source to Destination" />
+
+    <Button
+        android:id="@+id/customToast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/sourceDestination"
+        android:text="Show Custom Toast" />
 
 
 
