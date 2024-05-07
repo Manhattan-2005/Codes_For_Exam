@@ -17,6 +17,12 @@
         android:theme="@style/Theme.Codes_For_Exam"
         tools:targetApi="31">
         <activity
+            android:name=".TextToSpeechExample"
+            android:exported="false" />
+        <activity
+            android:name=".Animations"
+            android:exported="false" />
+        <activity
             android:name=".Custom_Toast"
             android:exported="false" />
         <activity

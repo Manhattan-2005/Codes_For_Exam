@@ -10,20 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:text="Click on the map for Geocoding: " />
-
-    <fragment
-        android:id="@+id/googleMap"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="450dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Enter Address for Reverse Geocoding: " />
+        android:text="Enter Address for Geocoding: " />
 
     <EditText
         android:id="@+id/address"
@@ -31,15 +18,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:hint="Enter Address"
-
         android:padding="20dp" />
 
     <Button
-        android:id="@+id/reverse_geocode"
+        android:id="@+id/geocode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:padding="20dp"
         android:text="Show Co-ordinates" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="Click on the map for Reverse Geocoding: " />
+
+    <fragment
+        android:id="@+id/googleMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="450dp" />
+
 
 </LinearLayout>

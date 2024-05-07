@@ -43,6 +43,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ((Button) findViewById(R.id.animation)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenActivity(Animations.class);
+            }
+        });
+
+        ((Button) findViewById(R.id.textToSpeech)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenActivity(TextToSpeechExample.class);
+            }
+        });
+
     }
 
     public void OpenActivity(Class activity) {

@@ -40,9 +40,9 @@ public class GeoCoding_And_ReverseGeoCoding extends AppCompatActivity implements
         setContentView(R.layout.activity_geo_coding);
 
         initializeMap();
-        Button revGeocodeButton = findViewById(R.id.reverse_geocode);
+        Button geocodeButton = findViewById(R.id.geocode);
 
-        revGeocodeButton.setOnClickListener(new View.OnClickListener() {
+        geocodeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 EditText addEditText = findViewById(R.id.address);
@@ -82,7 +82,7 @@ public class GeoCoding_And_ReverseGeoCoding extends AppCompatActivity implements
     }
 
     @Override
-    public void onMapClick(LatLng latLng) {
+    public void onMapClick(@NonNull LatLng latLng) {
 
         if (marker != null) {
             marker.remove();

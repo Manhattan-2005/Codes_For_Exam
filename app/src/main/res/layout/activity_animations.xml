@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="35dp"
+    tools:context=".Animations">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="Image"
+        android:src="@drawable/toast_image" />
+
+    <Button
+        android:id="@+id/zoomIn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_margin="10dp"
+        android:text="Zoom In" />
+
+
+    <Button
+        android:id="@+id/zoomOut"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/zoomIn"
+        android:text="Zoom Out" />
+
+
+    <Button
+        android:id="@+id/fadeIn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zoomIn"
+        android:layout_margin="10dp"
+        android:text="Fade In" />
+
+
+    <Button
+        android:id="@+id/fadeOut"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zoomOut"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/fadeIn"
+        android:text="Fade Out" />
+
+    <Button
+        android:id="@+id/rotateClockwise"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fadeIn"
+        android:layout_margin="10dp"
+        android:text="Rotate Clockwise" />
+
+
+    <Button
+        android:id="@+id/rotateAntiClockwise"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fadeOut"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/rotateClockwise"
+        android:text="Rotate Anti-Clockwise" />
+
+    <Button
+        android:id="@+id/stopAnimation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rotateAntiClockwise"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Stop Animation" />
+
+</RelativeLayout>
